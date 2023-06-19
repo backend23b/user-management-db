@@ -27,3 +27,16 @@ def start(update: Update, context: CallbackContext):
         update.message.reply_html(
             text=f'<b>Hello {user.first_name}</b>\n\nWelcome to our bot!'
         )
+
+
+def users(update: Update, context: CallbackContext):
+    # get all users from database
+    users = db.get_all_users()
+
+    # send users as message
+    text = '<b>Available Users</b>\n\n'
+    for user in users:
+        text += f"{user['firstname']} {user['lastname']} - @{user['username']}\n"
+    update.message.reply_html(
+        text=text
+    )
