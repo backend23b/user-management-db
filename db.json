@@ -1,9 +1,3 @@
 {
-    "users": {
-        "101": {
-            "firstname": "Ali",
-            "lastname": "Valiyev",
-            "username": "optimist"
-        }
-    }
+    "users": {}
 }
