@@ -27,8 +27,11 @@ class DB:
 
     def get_user(self, user_id):
         pass
+    
+    def get_all_users(self):
+        pass
 
-    def update_user(self, user_id, fiels):
+    def update_user(self, user_id, firstname=None, lastname=None, username=None):
         pass
 
     def delete_user(self, user_id):
